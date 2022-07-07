@@ -1,0 +1,222 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Body */
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  transition: all ease 0.2s;
+}
+body {
+  margin: 0;
+  font-size: 24px;
+  background-image: url(images/pattern.svg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+body:before {
+  content: '';
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgb(57, 53, 57);
+  background: linear-gradient(
+    90deg,
+    rgba(57, 53, 57, 1) 0%,
+    rgba(57, 53, 57, 0) 100%
+  );
+}
+
+/* Cabeçalhos */
+h1 {
+  display: none;
+}
+h2,
+b,
+strong {
+  font-weight: 700;
+}
+
+/* Container */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* Linhas */
+.row {
+  width: 100%;
+  display: flex;
+  gap: 4%;
+  flex-wrap: wrap;
+}
+
+/* Colunas */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cores */
+.bg.cinza {
+  background-color: #3e3e41;
+  color: #ffffff;
+}
+.bg.grafite {
+  background-color: #393539;
+  color: #ffffff;
+}
+.bg.preto {
+  background-color: #37373c;
+  color: #ffffff;
+}
+.bg.azul {
+  background-color: #15c3fa;
+  color: #ffffff;
+}
+.color.azul {
+  color: #15c3fa;
+}
+.bg.dark-azul {
+  background-color: #215674;
+  color: #ffffff;
+}
+.shadow {
+  -webkit-box-shadow: 0px 10px 25px 0px #232020;
+  box-shadow: 0px 10px 25px 0px #232020;
+}
+
+/* Botões */
+#links a,
+#contato a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  padding: 1em 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  cursor: pointer;
+  margin-right: 1em;
+}
+button.bg.azul:hover {
+  background-color: #215674;
+}
+button img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(319deg)
+    brightness(105%) contrast(102%);
+  width: 1em;
+  margin-right: 0.5em;
+}
+
+/* Menu */
+nav {
+  padding-top: 1em;
+}
+nav a,
+.cargo {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7em;
+  margin-right: 2em;
+}
+
+/* Header */
+header,
+nav,
+section {
+  margin-bottom: 5em;
+}
+header img {
+  max-width: 480px;
+}
+
+/* Cargo */
+.cargo {
+  font-size: 1em;
+}
+.cargo span {
+  font-weight: 700;
+}
+
+/* Skills */
+#skills .row .column {
+  width: 22%;
+}
+.progress,
+.progress > div {
+  width: 100%;
+  height: 1em;
+}
+#skills p {
+  margin-top: 0.5em;
+}
+
+/* Portfólio */
+.slider .column img {
+  width: 100%;
+}
+.slick-slide {
+  margin: 0.2em;
+}
+.slick-list {
+  margin: -0.2em;
+}
+.slick-dots li button::before {
+  font-size: 24px !important;
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .container {
+    max-width: 90%;
+  }
+  button {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 85%;
+  }
+  header,
+  nav,
+  section {
+    margin-bottom: 3em;
+  }
+  header img {
+    max-width: 90%;
+  }
+  .cargo {
+    font-size: 0.76em;
+  }
+  body::before {
+    background: linear-gradient(
+      180deg,
+      rgba(57, 53, 57, 1) 0%,
+      rgba(57, 53, 57, 0) 100%
+    );
+  }
+  #skills .row {
+    flex-direction: column;
+  }
+  #skills .row .column {
+    width: 100%;
+  }
+}

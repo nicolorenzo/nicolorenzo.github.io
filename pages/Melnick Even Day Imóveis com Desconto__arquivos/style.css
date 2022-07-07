@@ -1,0 +1,1414 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #F5F5F5;
+  color: #343840;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+  letter-spacing: normal;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #112240;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #7B808A;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #112240;
+}
+
+h5 {
+  letter-spacing: normal;
+}
+
+p {
+  color: #343840;
+}
+
+section {
+  padding: 8rem 0;
+}
+
+/* Botões e inputs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: normal;
+  text-decoration: none;
+  white-space: normal;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  line-height: normal;
+}
+
+.button.azul,
+button.azul,
+input[type="submit"].azul,
+input[type="reset"].azul,
+input[type="button"].azul {
+  background: #112240;
+  color: #ffffff;
+}
+
+.button.azul:hover,
+button.azul:hover,
+input[type="submit"].azul:hover,
+input[type="reset"].azul:hover,
+input[type="button"].azul:hover,
+.button.azul:focus,
+button.azul:focus,
+input[type="submit"].azul:focus,
+input[type="reset"].azul:focus,
+input[type="button"].azul:focus {
+  background: #1A3261;
+}
+
+.button.azul.grande,
+button.azul.grande,
+input[type="submit"].azul.grande,
+input[type="reset"].azul.grande,
+input[type="button"].azul.grande {
+  padding: 2.5rem 5rem;
+  font-size: 1.6rem;
+}
+
+.button.amarelo,
+button.amarelo,
+input[type="submit"].amarelo,
+input[type="reset"].amarelo,
+input[type="button"].amarelo {
+  background: #FAD107;
+  color: #112240;
+}
+
+.button.amarelo:hover,
+button.amarelo:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button.amarelo:focus,
+button.amarelo:focus,
+input[type="submit"].amarelo:focus,
+input[type="reset"].amarelo:focus,
+input[type="button"].amarelo:focus {
+  background: #FAE707;
+}
+
+.button.medio,
+button.medio,
+input[type="submit"].medio,
+input[type="reset"].medio,
+input[type="button"].medio {
+  padding: 1.5rem 3rem;
+}
+
+.button.pequeno,
+button.pequeno,
+input[type="submit"].pequeno,
+input[type="reset"].pequeno,
+input[type="button"].pequeno {
+  padding: 1.5rem 2.3rem;
+  font-size: 1.4rem;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: auto;
+  padding: 1.3rem;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #F5F5F5;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome */
+  color: #343840;
+  opacity: 0.2;
+  transition: all 0.2s ease;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+form {
+  margin: 0;
+}
+
+/* Uteis
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Margens */
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-10 {
+  margin-bottom: 1rem;
+}
+
+.mb-30 {
+  margin-bottom: 3rem;
+}
+
+.mb-50 {
+  margin-bottom: 5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+/* Alinhamentos */
+p.align-l {
+  text-align: left;
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+/* Ícones
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.icon {
+  display: inline-flex;
+  position: relative;
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+.icon svg {
+  position: absolute;
+}
+
+.icon.zap {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.icon.phone {
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+.icon.mail {
+  width: 1.4rem;
+  height: 1.1rem;
+}
+
+.icon.car {
+  width: 2.2rem;
+  height: 2.0rem;
+}
+
+.icon.ruler {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.icon.bed {
+  width: 2.6rem;
+  height: 1.8rem;
+}
+
+.icon.local {
+  width: 1.7rem;
+  height: 2.5rem;
+}
+
+.icon.arrow.prev {
+  width: 3rem;
+  height: 3rem;
+  transform: rotate(180deg);
+}
+
+.icon.arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
+.icon.close {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+button.azul .icon svg {
+  fill: #ffffff;
+}
+
+/* Header landing
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bg {
+  height: 40rem;
+}
+
+.bg img {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+.bg img.mobile {
+  display: none;
+}
+
+/* Header hotsite
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar {
+  background: #112240;
+  padding: 2rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {}
+
+.navbar .logo img {
+  width: 17rem;
+  display: block;
+}
+
+.navbar .menu {
+  margin-left: auto;
+}
+
+.navbar ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  text-align: right;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding-right: 3rem;
+}
+
+.navbar ul li:last-child {
+  padding-right: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all ease 0.2s;
+  border-width: 0;
+}
+
+.navbar ul li a:hover {
+  border-bottom: 3px solid #FAD107;
+}
+
+.navbar ul li a:last-child {
+  margin-right: 0;
+}
+
+/* Destaque Home
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.destaque.home {
+  display: flex;
+  align-items: center;
+}
+
+.destaque.home .box-destaque {
+  align-items: normal;
+  margin-bottom: 1rem;
+}
+
+.destaque.home .container {
+  margin: 0 1rem;
+}
+
+.destaque.home .slider-bt {
+  position: absolute;
+  right: 3rem;
+  bottom: 2rem;
+}
+
+.lightSlider, .lSSlideWrapper {
+  overflow: visible;
+}
+
+.lSSlideOuter .lSPager.lSpg>li a {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  transition: all ease 0.2s;
+}
+
+.lSSlideOuter .lSPager.lSpg>li:hover a, .lSSlideOuter .lSPager.lSpg>li.active a {
+  background: #FAD107;
+}
+
+.destaque.home h3 {
+  font-size: 1.6rem;
+}
+
+.destaque.home .info, .destaque.home .form {
+  padding: 3rem 4rem;
+  position: relative;
+}
+
+.destaque.home .icon.arrow {
+  width: 1.7rem;
+  height: 2.8rem;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.destaque.home .icon.arrow.prev {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.destaque.home .icon.arrow svg {
+  opacity: 0.5;
+  transition: all ease 0.2s;
+}
+
+.destaque.home .icon.arrow svg:hover {
+  opacity: 1;
+}
+
+.destaque.home .form {
+  background: #F5F5F5;
+  padding: 2rem 3rem;
+}
+
+.destaque.home .form h5 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #112240;
+}
+
+.destaque.home .form input, .destaque.home .form textarea {
+  background: #ffffff;
+  font-size: 1.4rem;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.destaque.home .form textarea {
+  display: none;
+}
+
+.destaque.home .form input[type="submit"] {
+  background: #112240;
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+}
+
+.destaque.home .form input[type="submit"]:hover {
+  background: #1A3261;
+}
+
+.destaque.home .form {
+  background: #F5F5F5;
+}
+
+.destaque.home .container ul li {
+  margin: 0;
+}
+
+.destaque.home .form {
+  background: #F5F5F5;
+}
+
+.destaque.home .imagem {
+  height: auto;
+}
+
+.destaque.home .imagem img {
+  height: 100%;
+}
+
+/* Destaque
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.destaque {
+  background: #E3E5E8;
+  padding: 2rem;
+}
+
+.destaque .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-destaque {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.destaque h1, .destaque p, .destaque h3 {
+  text-align: left;
+}
+
+.destaque .info {
+  padding: 5rem;
+}
+
+.destaque h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.destaque p {
+  color: #7B808A;
+}
+
+.destaque h3 {
+  color: #343840;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.destaque h3:last-child {
+  margin: 0;
+}
+
+.destaque .imagem {
+  width: 66.69%;
+  margin: 0;
+  height: 45rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.destaque .imagem img {
+  display: block;
+  height: 45rem;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+/* Intro
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+#intro {
+  background: #ffffff;
+}
+
+#intro .container {
+  max-width: 66rem;
+}
+
+#intro p {
+  font-size: 1.8rem;
+}
+
+/* Imóveis
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container .mix {
+  display: none;
+}
+
+.filter {}
+
+#filter-mobile {
+  display: none;
+}
+
+.filter p {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 1.6rem;
+  color: #7B808A;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+  padding-top: 60px;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.checkbox input[type="checkbox"] {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.checkbox label {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 1.5em;
+}
+
+.checkbox label:before, .checkbox label:after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.checkbox label:before {
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.checkbox input:checked~label:after {
+  opacity: 1;
+}
+
+.checkbox label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: #68b8c4;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.listagem {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-imovel {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 4px;
+  width: 32%;
+  background: #ffffff;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.card-imovel .info {
+  padding: 2rem;
+}
+
+.card-imovel h2, .card-imovel h3, .card-imovel p {
+  text-align: left;
+}
+
+.card-imovel p {
+  font-size: 1.5rem;
+  color: #7B808A;
+}
+
+.card-imovel h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #112240;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.card-imovel h3 {
+  color: #343840;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-imovel img {
+  width: 100%;
+  display: block;
+}
+
+.card-imovel .bts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-imovel .bts a {
+  width: 48%;
+}
+
+.card-imovel .bts a button {
+  width: 100%;
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(17, 34, 64, 0.8);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  display: flex;
+}
+
+.modal-window .icon.close {
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: 2rem;
+  opacity: 0.3;
+  transition: all ease 0.2s;
+}
+
+.modal-window .icon.close:hover {
+  opacity: 0.5;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-window .form {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  padding: 3rem;
+  border-radius: 4px;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.modal-window .form, .modal-window h3, .modal-window p {
+  text-align: center;
+  justify-content: center;
+}
+
+.modal-window h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #112240;
+}
+
+/* Barra de contato
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.contact-bar h5 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: normal;
+}
+
+.contact-bar {
+  background: #112240;
+  border-radius: 4px;
+  padding: 3rem;
+}
+
+.contact-bar p {
+  color: #8891A0;
+}
+
+.contact-bar input[type="email"],
+.contact-bar input[type="number"],
+.contact-bar input[type="search"],
+.contact-bar input[type="text"],
+.contact-bar input[type="tel"],
+.contact-bar input[type="url"],
+.contact-bar input[type="password"],
+.contact-bar textarea,
+.contact-bar select {
+  background-color: #0D1A30;
+  color: #ffffff;
+}
+
+.contact-bar ::-webkit-input-placeholder {
+  /* Chrome */
+  color: #ffffff;
+  opacity: 0.2;
+  transition: all 0.2s ease;
+}
+
+.contact-bar :focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.contact-bar .button {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+#galeria h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5rem;
+  letter-spacing: normal;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  color: #112240;
+}
+
+.plantas {}
+
+.plantas h3 {
+  font-size: 2rem;
+  color: #8b9097;
+}
+
+.plantas img {
+  width: 100%;
+  display: block;
+}
+
+.plantas img.principal {}
+
+.plantas img.principal:hover {
+  cursor: zoom-in;
+}
+
+.lSSlideOuter .lSPager.lSGallery {
+  margin: auto;
+}
+
+.lSSlideOuter .lSPager.lSGallery li, .lSSlideOuter .lSPager.lSGallery li {
+  opacity: 0.5;
+  transition: all ease 0.2s;
+}
+
+.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
+  opacity: 1;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* Contato
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+#contato .columns.m-auto {
+  float: none;
+  margin: auto;
+}
+
+#contato .fone, #contato .fone h3, #contato .fone p {
+  text-align: left;
+}
+
+#contato .fone p {
+  font-size: 1.8rem;
+}
+
+#contato .fone button p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+#contato .form {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+  padding: 5rem;
+  border-radius: 4px;
+}
+
+.form h3 {
+  margin-bottom: 1rem;
+}
+
+#contato p {
+  font-size: 1.6rem;
+  color: #7B808A;
+}
+
+#contato a span {
+  font-weight: 400;
+}
+
+#contato button a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 2.9rem;
+  text-align: left;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer {
+  margin-bottom: 20rem;
+}
+
+.fixed-bar p {
+  text-align: left;
+  color: #FAD107;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.fixed-bar button {
+  margin-right: 2rem;
+}
+
+.fixed-bar button a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 2.2rem;
+  text-align: left;
+  color: #FAD107;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.fixed-bar button a span {
+  font-weight: normal;
+}
+
+.fixed-bar {
+  background: #FAD107;
+  padding: 2rem 3rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 99999;
+}
+
+.fixed-bar .container {
+  display: flex;
+}
+
+.fixed-bar button a .icon.zap {
+  width: 2.5rem;
+  height: 2.4rem;
+}
+
+.fixed-bar button a .icon.phone {
+  width: 2.1rem;
+  height: 1.9rem;
+}
+
+.fixed-bar button a .icon.mail {
+  width: 2.2rem;
+  height: 1.7rem;
+}
+
+.fixed-bar button.mail {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.fixed-bar button.mail a {
+  font-size: 1.8rem;
+}
+
+.logo-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+
+.logo-up p {
+  margin: 0;
+  color: #7b808a;
+  margin-right: 1rem;
+}
+
+.logo-up a {
+  color: #7b808a;
+  text-decoration: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.logo-up a:hover {
+  color: #343840;
+}
+
+.logo-up .icon.up {
+  width: 3rem;
+  height: 3rem;
+}
+
+.logo-up svg {
+  width: 3rem;
+  height: 3rem;
+  fill: #7b808a;
+  cursor: pointer;
+}
+
+.logo-up svg:hover {
+  width: 3rem;
+  height: 3rem;
+  fill: #343840;
+}
+
+/* For devices larger than 400px */
+@media (max-width: 1120px) {
+  #contato .center-flex {
+    flex-direction: column;
+  }
+
+  #contato .columns {
+    width: 80%;
+    text-align: center;
+  }
+
+  #contato .form.m-auto {
+    margin-top: 5rem;
+  }
+
+  #contato .fone h3, #contato .fone p {
+    text-align: center;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .fixed-bar .container {
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #imoveis .container {
+    flex-direction: column;
+  }
+
+  .two.columns.filter {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+  }
+
+  form#Filters {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  #Container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .card-imovel {
+    width: 48%;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  #filter-mobile {
+    display: flex;
+    width: 100%;
+    background: #F5F5F5;
+    margin: 0;
+    z-index: 99999999999;
+  }
+
+  #filter-mobile {
+    font-size: 1.4rem;
+  }
+
+  #filter-mobile p {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: #7B808A;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+}
+
+/* For devices larger than 400px */
+@media (max-width: 920px) {
+  #galeria .columns {
+    width: 90%;
+  }
+
+  #galeria .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-bar {
+    margin-bottom: 5rem;
+  }
+
+  .fixed-bar {
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  .fixed-bar button {
+    font-size: 1.6rem;
+    padding: 1rem 2.5rem;
+  }
+
+  .fixed-bar button a {
+    font-size: 1.6rem;
+  }
+
+  .fixed-bar button.mail {
+    margin: inherit;
+  }
+
+  .fixed-bar button.mail a {
+    font-size: 1.4rem;
+  }
+
+  .destaque.home {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .destaque.home .box-destaque {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .destaque.home .box-destaque .six.columns {
+    width: 100%;
+    margin: 0;
+  }
+
+  .destaque .imagem {
+    width: 100%;
+  }
+
+  .destaque .imagem img {
+    position: relative;
+    width: 100%;
+    transform: none;
+    left: auto;
+  }
+
+  #intro .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .box-destaque {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .box-destaque .columns, .destaque .imagem {
+    width: 100%;
+    height: auto;
+  }
+
+  .destaque {
+    justify-content: center;
+  }
+
+  .destaque .imagem img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .destaque.home .container {
+    margin: 0;
+  }
+
+  .destaque.home .icon.arrow.prev {
+    position: absolute;
+    z-index: 9999;
+    left: 5px;
+  }
+
+  .destaque.home .icon.arrow#goToNextSlide {
+    position: absolute;
+    z-index: 9999;
+    right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fixed-bar button.mail {
+    display: none;
+  }
+
+  #Container {
+    justify-content: center;
+  }
+
+  .card-imovel {
+    width: 80%;
+  }
+
+  .destaque.home {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .destaque.home .box-destaque {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .bg {
+    height: auto;
+  }
+
+  .bg img.desk {
+    display: none;
+  }
+
+  .bg img.mobile {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  section {
+    padding: 5rem 0;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+  }
+
+  .navbar .menu {
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  #contato .columns {
+    width: 100%;
+    text-align: center;
+  }
+
+  #contato .form {
+    padding: 3rem;
+  }
+
+  .form h3 {
+    font-size: 2.5rem;
+  }
+
+  #contato .fone button a {
+    font-size: 2.3rem;
+  }
+
+  #contato .fone button.azul.grande, #contato .button.azul.grande {
+    padding: 1.5rem 3rem;
+  }
+
+  .box-destaque {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .destaque .info {
+    padding: 3rem;
+  }
+
+  .fixed-bar {
+    padding: 1rem;
+  }
+
+  .fixed-bar p {
+    text-align: center;
+  }
+
+  .fixed-bar p span {
+    display: none;
+  }
+
+  .fixed-bar button:first-child {
+    margin-right: 1rem;
+    padding: 1rem;
+  }
+
+  .fixed-bar button {
+    margin: 0;
+    padding: 1rem;
+    width: 50%;
+  }
+
+  .fixed-bar button .icon {
+    margin-right: 0.5rem;
+  }
+
+  .fixed-bar button a {
+    font-size: 1.3rem;
+  }
+
+  .fixed-bar button a .icon.zap, .fixed-bar button a .icon.phone {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .destaque.home .container {
+    margin: 0;
+  }
+
+  .destaque.home {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .destaque.home .box-destaque {
+    width: 95%;
+  }
+
+  .destaque.home .info, .destaque.home .form {
+    padding: 3rem;
+  }
+
+  .destaque h3:last-child {
+    flex-wrap: wrap;
+  }
+
+  .destaque.home .slider-bt {
+    position: relative;
+    width: 100%;
+    right: auto;
+    bottom: auto;
+    margin-top: 2rem;
+  }
+
+  form#Filters, .card-imovel {
+    width: 100%;
+  }
+}

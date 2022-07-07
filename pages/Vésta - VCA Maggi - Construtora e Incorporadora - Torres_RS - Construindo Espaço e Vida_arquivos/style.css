@@ -1,0 +1,1357 @@
+/* Fontes */
+
+* {
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  color: #ffffff;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+/* Títulos */
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+h1, h2 {
+  font-size: 3.3rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+/* Cores e fundos */
+
+.grey {
+  color: #666666;
+}
+
+.dark-grey {
+  color: #333333;
+}
+
+.grey-2 {
+  color: #4D4D4D;
+}
+
+.black {
+  color: #000000;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.bege {
+  color: #E1E5D9;
+}
+
+.green {
+  color: #96C797;
+}
+
+.dark-green {
+  color: #233227;
+}
+
+.green-bg {
+  background-color: #96C797;
+  color: #ffffff;
+}
+
+.dark-green-bg {
+  background-color: #233227;
+  color: #ffffff;
+}
+
+.orange-bg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e67d28+0,570b07+100 */
+  background: #e67d28;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e67d28 0%, #570b07 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e67d28 0%, #570b07 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e67d28 0%, #570b07 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67d28', endColorstr='#570b07', GradientType=0);
+  /* IE6-9 */
+  color: #ffffff;
+}
+
+.black-bg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,1a1a1a+100 */
+  background: #333333;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #333333 0%, #1a1a1a 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #333333 0%, #1a1a1a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #333333 0%, #1a1a1a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#1a1a1a', GradientType=0);
+  /* IE6-9 */
+  color: #ffffff;
+}
+
+.grey-bg {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.dark-grey-bg {
+  background-color: #333333;
+  color: #B3B3B3;
+}
+
+.white-bg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cccccc+100 */
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #cccccc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #cccccc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #cccccc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc', GradientType=0);
+  /* IE6-9 */
+}
+
+.white-stroke {
+  border: 1px solid #ffffff;
+  background: none;
+}
+
+.bege-bg {
+  background-color: #E1E5D9;
+  color: #666666;
+}
+
+/* Úteis */
+
+.main {
+  text-align: center;
+}
+
+.main section {
+  padding-top: 10rem;
+}
+
+.main .box {
+  padding: 2rem;
+}
+
+.main section:last-child {
+  padding-bottom: 10rem;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.mb-20 {
+  margin-bottom: 2rem;
+}
+
+.mt-30 {
+  margin-top: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.half {
+  width: 50%;
+}
+
+.row.flex, .col.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row.flex.center, .col.flex.center {
+  align-items: center;
+}
+
+.row.flex.end, .col.flex.end {
+  align-items: end;
+}
+
+.row.flex.flexend, .col.flex.flexend {
+  align-items: flex-end;
+}
+
+.col.flex {
+  flex-direction: column;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  display: flex;
+}
+
+figcaption {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Ícones */
+
+.icon {
+  display: inline-flex;
+  align-self: center;
+}
+
+.icon svg, .icon img {
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+}
+
+.icon.baseline svg, .icon img {
+  position: relative;
+}
+
+.icon.right {
+  margin-left: 0.8rem;
+}
+
+.icon.left {
+  margin-right: 0.8rem;
+}
+
+/* Botões */
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+  display: inline-block;
+  padding: 1em 2em;
+  text-align: center;
+  font-weight: normal;
+  line-height: 100%;
+  letter-spacing: normal;
+  text-transform: none;
+  text-decoration: none;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all ease 0.2s;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.button.big, button.big, input[type="submit"].big, input[type="reset"].big, input[type="button"].big {
+  font-size: 2.8rem;
+}
+
+.button.medium, button.medium, input[type="submit"].medium, input[type="reset"].medium, input[type="button"].medium {
+  font-size: 1.4rem;
+}
+
+.button.small, button.small, input[type="submit"].small, input[type="reset"].small, input[type="button"].small {
+  padding: 1.5em 3em;
+}
+
+.button.purple-bg:hover, button.purple-bg:hover, input.purple-bg[type="submit"]:hover, input.purple-bg[type="reset"]:hover, input.purple-bg[type="button"]:hover, .button.purple-bg:focus, button.purple-bg:focus, input.purple-bg[type="submit"]:focus, input.purple-bg[type="reset"]:focus, input.purple-bg[type="button"]:focus {
+  background-color: #833abb;
+}
+
+.button.yellow-bg, button.yellow-bg, input.yellow-bg[type="submit"], input.yellow-bg[type="reset"], input.yellow-bg[type="button"], .button.yellow-bg:focus, button.yellow-bg:focus, input.yellow-bg[type="submit"]:focus, input.yellow-bg[type="reset"]:focus, input.yellow-bg[type="button"]:focus {
+  color: #000000;
+}
+
+.button.yellow-bg:hover, button.yellow-bg:hover, input.yellow-bg[type="submit"]:hover, input.yellow-bg[type="reset"]:hover, input.yellow-bg[type="button"]:hover, .button.yellow-bg:focus, button.yellow-bg:focus, input.yellow-bg[type="submit"]:focus, input.yellow-bg[type="reset"]:focus, input.yellow-bg[type="button"]:focus {
+  background-color: #d1c000;
+}
+
+.button.white-bg, button.white-bg, input.white-bg[type="submit"], input.white-bg[type="reset"], input.white-bg[type="button"], .button.white-bg:focus, button.white-bg:focus, input.white-bg[type="submit"]:focus, input.white-bg[type="reset"]:focus, input.white-bg[type="button"]:focus {
+  color: #000000;
+}
+
+.button.white-bg:hover, button.white-bg:hover, input.white-bg[type="submit"]:hover, input.white-bg[type="reset"]:hover, input.white-bg[type="button"]:hover, .button.white-bg:focus, button.white-bg:focus, input.white-bg[type="submit"]:focus, input.white-bg[type="reset"]:focus, input.white-bg[type="button"]:focus {
+  background-color: #ececec;
+}
+
+.button.white-stroke:hover, button.white-stroke:hover, input.white-stroke[type="submit"]:hover, input.white-stroke[type="reset"]:hover, input.white-stroke[type="button"]:hover, .button.white-stroke:focus, button.white-stroke:focus, input.white-stroke[type="submit"]:focus, input.white-stroke[type="reset"]:focus, input.white-stroke[type="button"]:focus {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {}
+
+button.rose-bg:hover {
+  background-color: #c15b4e;
+}
+
+/* Inputs */
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+  color: rgba(179, 179, 179, 0.5);
+  padding: 10px;
+  padding-left: 0;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(179, 179, 179, 0.5);
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: all ease 0.2s;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+  color: rgba(179, 179, 179, 1);
+  border: none;
+  border-bottom: 1px solid rgba(179, 179, 179, 1);
+  outline: 0;
+}
+
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
+  color: rgba(179, 179, 179, 0.5);
+  transition: all ease 0.2s;
+}
+
+textarea:focus::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {
+  color: rgba(179, 179, 179, 1);
+}
+
+/* Firefox > 19 */
+
+textarea::-moz-placeholder, input::-moz-placeholder {
+  color: rgba(179, 179, 179, 0.5);
+  transition: all ease 0.2s;
+}
+
+textarea:focus::-moz-placeholder, input:focus::-moz-placeholder {
+  color: rgba(179, 179, 179, 1);
+}
+
+/* Internet Explorer 10 */
+
+textarea:-ms-input-placeholder, input:-ms-input-placeholder {
+  color: rgba(179, 179, 179, 0.5);
+  transition: all ease 0.2s;
+}
+
+textarea:focus:-ms-input-placeholder, input:focus:-ms-input-placeholder {
+  color: rgba(179, 179, 179, 1);
+}
+
+/* Menu [OLD]
+
+header {
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-end;
+  z-index: 3;
+  transition: all ease 0.2s;
+}
+
+header.scrollUp {
+  transform: translateY(-180px);
+}
+
+nav img {
+  width: 8rem;
+  height: auto;
+}
+
+nav a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.sticky-nav-tabs-container {
+  margin: auto;
+  font-weight: 400;
+  top: 0;
+  max-width: 1170px;
+  width: 100%;
+  padding: 2rem 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.sticky-nav-tabs-container--top-second {
+  top: 0;
+}
+
+.sticky-nav-tab {
+  margin-left: 5rem;
+  padding-bottom: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sticky-nav-tab:hover {
+  color: white;
+  background: rgba(33, 33, 33, 1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sticky-nav-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #E1E5D9;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+*/
+
+/* Menu */
+
+header {
+  width: 100%;
+  position: fixed;
+  transform: translateY(0);
+  text-align: right;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  z-index: 3;
+  padding: 0 2rem;
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+  transition: all ease 0.2s;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=0);
+  /* IE6-9 */
+}
+
+header.scrollUp {
+  transform: translateY(-180px);
+}
+
+header .container {
+  border-bottom: 1px solid #ffffff;
+}
+
+header img {
+  width: 12.4rem;
+  margin-right: auto;
+  padding: 1rem 0;
+}
+
+header a {
+  margin-left: 2rem;
+}
+
+.itens {
+  display: none;
+}
+
+/* Início */
+
+#inicio .container {
+  max-width: 1280px;
+}
+
+.banner {
+  width: 100%;
+  height: 720px;
+  text-align: left;
+  background: #333333 no-repeat top right;
+  background-image: url(../images/predio-vesta-vca-maggi.jpg);
+}
+
+.banner .text {
+  max-width: 25rem;
+  margin-left: auto;
+  padding-right: 10rem;
+}
+
+#inicio h1 {
+  font-size: 2.4rem;
+}
+
+#inicio h1, #inicio span {
+  color: #ffffff;
+}
+
+#inicio p {
+  margin-bottom: 2rem;
+}
+
+/* Intro */
+
+#intro {
+  text-align: center;
+  padding: 10rem 0;
+}
+
+#intro .text {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro .container {
+  max-width: 1170px;
+  height: 340px;
+  overflow: hidden;
+  transition: all ease 0.5s;
+}
+
+#intro .container:hover {
+  height: 600px;
+}
+
+/* Torres */
+
+.torres {
+  position: absolute;
+  left: 50%;
+  transform: perspective(1px) translateX(-50%);
+  width: 166%;
+  transition: all ease 0.5s;
+}
+
+.torres * {
+  transition: all ease 0.5s;
+}
+
+.torres .icon {
+  font-size: 8rem;
+}
+
+.torres .content {
+  position: relative;
+  z-index: 1;
+}
+
+.torres .box p {
+  max-width: 40rem;
+  font-size: 0;
+  transition: all ease 0.5s;
+  opacity: 0;
+}
+
+.torres .box {
+  width: 18%;
+  float: left;
+  margin: 0 1%;
+  transition: all ease 0.5s;
+  position: relative;
+  padding: 8rem 0;
+  overflow: hidden;
+}
+
+.torres h3 {
+  margin-bottom: 2rem;
+}
+
+.torres button {
+  margin: 0;
+}
+
+.torres.residencial {
+  transform: perspective(1px) translateX(0%);
+  left: 0%;
+}
+
+.torres.corporate {
+  transform: perspective(1px) translateX(-50%);
+  left: 50%;
+}
+
+.torres.shopping {
+  transform: perspective(1px) translateX(0%);
+  left: -66%;
+}
+
+.video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.torres .box video {
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.torres .box .video .black-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background: #000000;
+}
+
+.torres .box:hover {
+  width: 58%;
+  padding: 16rem 0;
+}
+
+.torres .box:hover p {
+  font-size: 1.4rem;
+  opacity: 1;
+}
+
+.torres .box:hover video {
+  opacity: 1;
+}
+
+.torres .box:hover .video .black-bg {
+  opacity: 0.5;
+}
+
+.torres .box .icon svg {
+  height: unset;
+  margin-bottom: 1rem;
+}
+
+.yt-video {
+  position: relative;
+  width: 100%;
+  max-width: 1170px;
+  height: 0;
+  padding-bottom: 56.27198%;
+  margin: auto;
+}
+
+.yt-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.codegena iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Localização */
+
+#localizacao {
+  text-align: center;
+  padding: 15rem 0;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+#localizacao h2 {
+  color: #000000;
+}
+
+#localizacao p {
+  color: #808080;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+#localizacao iframe {
+  width: 100%;
+  height: 500px;
+}
+
+#localizacao p {
+  margin-bottom: 3rem;
+}
+
+/* Carrossel Slider */
+
+.carrossel img {
+  height: 60rem;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.slide p {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffffff;
+}
+
+.slick-dots li button::before {
+  font-size: 25px;
+  line-height: 20px;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  color: #ffffff;
+}
+
+/* Residencial */
+
+.residencial.banner {
+  background-image: url(../images/predio-vesta-residencial-vca-maggi.jpg);
+}
+
+/* Corporate */
+
+.corporate.banner {
+  background-image: url(../images/predio-vesta-corporate-vca-maggi.jpg);
+}
+
+/* Center */
+
+.center-vesta.banner {
+  background-image: url(../images/banner-vesta-center-vca-maggi.jpg);
+}
+
+/* Contato */
+
+#contato {
+  padding: 20rem;
+  top: -5rem;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+#contato .container {
+  padding: 5rem 10rem;
+  background: #ffffff;
+  color: #B3B3B3;
+}
+
+form .col {
+  flex: 2;
+}
+
+form .col:first-child {
+  margin-right: 4rem;
+}
+
+form textarea {
+  height: 100%;
+}
+
+/* Barra de contato */
+
+.contact-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #f1f2f2;
+  padding: 1rem 0;
+  z-index: 2;
+  transition: all ease 0.2s;
+}
+
+.nav-down {
+  bottom: -80px;
+}
+
+.contact-bar h3 {
+  margin: 0;
+  margin-right: 10rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contact-bar a {
+  margin-left: 2rem;
+}
+
+/* Modal */
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal-window .card.email {
+  box-sizing: border-box;
+}
+
+.modal-window p {
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.modal-window .icon.close {
+  display: flex;
+  opacity: 0.3;
+  transition: all ease 0.2s;
+  position: absolute;
+  top: -3.5rem;
+  right: 0;
+}
+
+.icon.close svg {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.modal-window .icon.close:hover {
+  opacity: 0.5;
+  margin: 0;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+  margin: 0;
+}
+
+/* Footer */
+
+footer {
+  padding: 10rem 0;
+  padding-bottom: 20rem;
+}
+
+footer a, footer p, footer svg {
+  color: #a5a5a5;
+  margin-bottom: 0;
+  transition: all ease 0.2s;
+  text-decoration: none;
+}
+
+footer .icon svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+footer a:hover, footer svg:hover {
+  color: #808182;
+}
+
+/* Botão Go to Top */
+
+.gotop {
+  position: absolute;
+  bottom: 10rem;
+  opacity: 0;
+  transition: all ease 0.2s;
+  right: 0;
+}
+
+.gotop.show {
+  opacity: 1;
+}
+
+.gotop a {
+  background: #ffffff;
+  width: 4rem;
+  height: 4rem;
+  border: solid 1px #CCCCCC;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.gotop svg {
+  fill: none;
+  stroke: #CCCCCC;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  font-size: 2.6rem;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 1170px) {
+  /* Menu */
+  .sticky-nav-tabs-container {
+    max-width: 960px;
+  }
+  /* Menu */
+  #inicio {
+    align-items: end;
+    height: unset;
+    background: #333333 url(../images/bg.jpg) no-repeat bottom right;
+    background-size: 120vh auto;
+  }
+  #inicio h1, #inicio p {
+    max-width: 60rem;
+    width: 100%;
+  }
+  /* Infraestrutura */
+  .contact-bar h3 {
+    margin-right: 0;
+  }
+  /* Contato */
+  #contato {
+    padding: 5rem;
+    padding-top: 20rem;
+  }
+  /* Botão Go to Top */
+  .gotop {
+    bottom: 16rem;
+    right: 2rem;
+  }
+  /* Barra de contato */
+  .nav-down {
+    bottom: -145px;
+  }
+}
+
+@media (max-width: 1040px) {
+  /* Início */
+  .banner, .corporate.banner, .residencial.banner, .center-vesta.banner {
+    background: #000000 no-repeat top center;
+  }
+  .banner.col.flex.center {
+    justify-content: end;
+    height: 860px;
+  }
+  .banner .text {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 13rem;
+    text-align: center;
+  }
+  .banner {
+    background-image: url(../images/predio-vesta-mobile-vca-maggi.jpg);
+  }
+  /* Residencial */
+  .residencial.banner {
+    background-image: url(../images/predio-vesta-mobile-residencial-vca-maggi.jpg);
+  }
+  /* Corporate */
+  .corporate.banner {
+    background-image: url(../images/predio-vesta-mobile-corporate-vca-maggi.jpg);
+  }
+  /* Center */
+  .center-vesta.banner {
+    background-image: url(../images/predio-vesta-mobile-center-vca-maggi.jpg);
+  }
+  /* Barra de contato */
+  .contact-bar h3 {
+    text-align: center;
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Carrossel Slider */
+  .carrossel img {
+    height: 40rem;
+  }
+  /* Úteis */
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section p, #localizacao p {
+    max-width: 90%;
+  }
+  /* Intro */
+  #intro .container {
+    height: auto;
+    overflow: unset;
+  }
+  /* Torres */
+  .torres.row.flex.center {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  .torres .box {
+    width: 90%;
+    max-width: 50rem;
+    margin-bottom: 3rem;
+    padding: 8rem;
+    box-sizing: border-box;
+  }
+  .torres .box:hover {
+    width: unset;
+    padding: unset;
+  }
+  .torres .box p {
+    font-size: unset;
+    opacity: 1;
+  }
+  .torres .box button {
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Menu */
+  nav {
+    display: none;
+  }
+  .menu-mobile {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 2rem 0;
+  }
+  .menu-mobile.container {
+    max-width: 960px;
+  }
+  .itens {
+    height: 100vh;
+    position: fixed;
+    transition: all ease 0.3s;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 5rem;
+    right: -40rem;
+    z-index: 3;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .itens.fechado {
+    right: 0;
+  }
+  .itens a {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  .hamburguer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 3.7rem;
+    height: 3.0rem;
+    margin-left: auto;
+    border-radius: 0.2rem;
+  }
+  .itens .hamburguer {
+    margin-bottom: 2rem;
+  }
+  .line-1, .line-2, .line-3 {
+    width: 2.4rem;
+    height: 0.3rem;
+    background: #E1E5D9;
+    margin: 0.2rem;
+    transition: all ease 0.2s;
+  }
+  .line-1.aberto, .line-2.aberto, .line-3.aberto {
+    position: absolute;
+    margin: 0;
+    background: #ffffff;
+  }
+  .line-1.aberto {
+    transform: rotate(45deg);
+  }
+  .line-2.aberto {
+    transform: rotate(-45deg);
+  }
+  .line-3.aberto {
+    transform: rotate(-45deg);
+  }
+  /* Contato */
+  #contato {
+    padding: 13rem 0;
+  }
+  #contato .container {
+    padding: 5rem;
+    width: 90%;
+  }
+  form .row.flex {
+    flex-direction: column;
+  }
+  form .col:first-child {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Títulos */
+  h1, h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  /* Botões */
+  button.bt.orange-bg {
+    font-size: 1.4rem;
+  }
+  /* Úteis */
+  .main section, #localizacao, #intro {
+    padding-top: 5rem;
+  }
+  .main section:last-child {
+    padding-top: 7rem;
+  }
+  /* Início */
+  .banner, .banner.col.flex.center, .corporate.banner, .residencial.banner, .center-vesta.banner {
+    background-size: 500px;
+    height: 610px;
+    background-position: bottom;
+  }
+  .banner.home.col.flex.center {
+    height: 640px;
+    background-position: bottom;
+  }
+  .banner .text {
+    max-width: 100%;
+    margin: 0 5rem;
+    margin-top: 11rem;
+  }
+  /* Torres */
+  .torres h3 {
+    font-size: 2rem;
+  }
+  .torres .box {
+    padding: 3rem;
+  }
+  .torres button {
+    white-space: normal;
+  }
+  /* Carrossel Slider */
+  .carrossel img {
+    height: 20rem;
+  }
+  /* Botão Go to Top */
+  .gotop, .gotop.show {
+    opacity: 0;
+  }
+  /* Barra de contato */
+  .contact-bar {
+    background: rgba(0, 0, 0, 0);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  }
+  .contact-bar h3, .contact-bar strong {
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+  .contact-bar br, .contact-bar span {
+    display: none;
+  }
+  .contact-bar a {
+    margin-left: 0;
+  }
+  .contact-bar a:last-child {
+    margin-left: 2rem;
+  }
+  .contact-bar button.bt.orange-bg {
+    width: 6rem;
+    height: 6rem;
+    padding: 0;
+    font-size: 1.2em;
+    border-radius: 999999px;
+  }
+  .contact-bar .icon.left {
+    margin: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Títulos */
+  h1, h2 {
+    font-size: 2.1rem;
+  }
+  /* Botões */
+  button.bt.orange-bg {
+    font-size: 1.4rem;
+  }
+  /* Localização */
+  #localizacao .card {
+    padding: 3rem 2rem;
+  }
+  #localizacao .card button.bt.orange-bg {
+    padding: 1.5em;
+  }
+  /* Barra de contato */
+  .contact-bar h3, .contact-bar strong {
+    font-size: 1.4rem;
+  }
+}
+
+/* Ipad */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+  /* Intro */
+  #intro .container {
+    height: auto;
+    overflow: unset;
+  }
+  /* Torres */
+  .torres.row.flex.center {
+    position: relative;
+    width: 90%;
+    align-items: unset;
+    left: unset;
+    transform: unset;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  .torres .box {
+    flex: 1;
+    margin-bottom: 2rem;
+    padding: 3rem;
+    box-sizing: border-box;
+    flex-wrap: unset;
+  }
+  .torres .box p {
+    font-size: unset;
+    opacity: 1;
+  }
+  .torres button {
+    white-space: normal;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .torres .box {
+    flex: unset;
+    width: 40%;
+    margin-bottom: 2rem;
+    padding: 3rem;
+    box-sizing: border-box;
+    flex-wrap: unset;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .torres .box {
+    width: 80%;
+    margin-bottom: 2rem;
+    padding: 3rem;
+    box-sizing: border-box;
+    flex-wrap: unset;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+  .torres .box {
+    width: 60%;
+    padding: 8rem;
+  }
+}

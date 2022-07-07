@@ -1,0 +1,880 @@
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 200;
+  font-family: "Montserrat", "Century Gothic", sans-serif;
+  color: #666666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+text-align: center; }
+h1 { font-size: 4.5rem; }
+h2 { font-size: 1.5rem;}
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h3 { font-size: 1.5rem; letter-spacing: 0.5rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+p {
+  font-size: 1.9rem;
+font-weight: 200;
+}
+
+p strong {
+  font-weight: 400;
+}
+
+a {
+  color: #00a3a0 ;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+font-weight: 200;
+}
+
+section {
+  text-align: center;
+}
+
+.pb-10 {
+ padding-bottom: 10rem;
+}
+
+.pb-4 {
+ padding-bottom: 4rem;
+}
+
+section h1 {
+ padding-top: 12rem;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(21,96,104,0.5);
+-moz-box-shadow: 0px 5px 5px 0px rgba(21,96,104,0.5);
+box-shadow: 0px 5px 5px 0px rgba(21,96,104,0.5);
+}
+
+section#header {
+  text-align: left;
+padding: 0;
+background: url(../images/minilaparoscopia-dr-fernando-figueiredo-background.jpg) no-repeat top right,linear-gradient(to bottom,  #00a3a0 0%,#0093a0 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a3a0+0,0093a0+98 */
+background: url(../images/minilaparoscopia-dr-fernando-figueiredo-background.jpg) no-repeat top right,#00a3a0; /* Old browsers */
+background: url(../images/minilaparoscopia-dr-fernando-figueiredo-background.jpg) no-repeat top right,-moz-linear-gradient(top,  #00a3a0 0%, #0093a0 98%); /* FF3.6-15 */
+background: url(../images/minilaparoscopia-dr-fernando-figueiredo-background.jpg) no-repeat top right,-webkit-linear-gradient(top,  #00a3a0 0%,#0093a0 98%); /* Chrome10-25,Safari5.1-6 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3a0', endColorstr='#0093a0',GradientType=0 ); /* IE6-9 */
+  background-position-x: 100%;
+background-position-y: 0%;
+  background-blend-mode: multiply;
+  color: #ffffff;
+  height: 55rem;
+}
+
+section#header.cirurgias-bg {
+background: linear-gradient(to bottom,  #00a3a0 0%,#0093a0 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a3a0+0,0093a0+98 */
+background: #00a3a0; /* Old browsers */
+background: -moz-linear-gradient(top,  #00a3a0 0%, #0093a0 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #00a3a0 0%,#0093a0 98%); /* Chrome10-25,Safari5.1-6 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3a0', endColorstr='#0093a0',GradientType=0 ); /* IE6-9 */
+  background-position-x: 100%;
+background-position-y: 0%;
+  background-blend-mode: multiply;
+  color: #ffffff;
+  height: auto;
+}
+
+.banner h1 {
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 6.6rem;
+  margin: 0;
+  text-align: left;
+}
+
+.banner {
+  padding: 22rem 0 0 0;
+}
+
+.banner p{
+  font-size: 1.7rem;
+}
+
+#especialidades a.bt {
+  margin-bottom: 12rem;
+}
+
+a.bt, input[type="submit"] {
+  margin-top: 2rem;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  border: none;
+  font-size: 1.1rem;
+-webkit-box-shadow: 0px 5px 9px 0px rgba(21,96,104,0.7);
+-moz-box-shadow: 0px 5px 9px 0px rgba(21,96,104,0.7);
+-o-box-shadow: 0px 5px 9px 0px rgba(21,96,104,0.7);
+-ms-box-shadow: 0px 5px 9px 0px rgba(21,96,104,0.7);
+box-shadow: 0px 5px 9px 0px rgba(21,96,104,0.7);
+  -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  border: none;
+  border-radius: 5rem;
+}
+
+a.bt.big{
+  padding: 2rem 4rem;
+}
+
+
+a.bt.small {
+  padding: 1.4rem 3rem;
+  font-size: 0.9rem;
+}
+
+a.bt:hover, input[type="submit"]:hover {
+  -o-box-shadow: 0px 5px 8px 0px rgba(21,96,104,0.4);
+-moz-box-shadow: 0px 5px 8px 0px rgba(21,96,104,0.4);
+-webkit-box-shadow: 0px 5px 8px 0px rgba(21,96,104,0.4);
+-ms-box-shadow: 0px 5px 8px 0px rgba(21,96,104,0.4);
+  box-shadow: 0px 5px 8px 0px rgba(21,96,104,0.4);
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -moz-transform: translateY(-0.2rem);
+    -o-transform: translateY(-0.2rem);
+    -ms-transform: translateY(-0.2rem);
+    -webkit-transform: translateY(-0.2rem);
+    transform: translateY(-0.2rem);
+}
+
+a.bt.white {
+  background: #ffffff;
+  color: #00a3a0 ;
+}
+
+a.bt.green, input[type="submit"].bt.green {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a3a0+0,0093a0+98 */
+background: #00a3a0; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #00a3a0 0%, #0093a0 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #00a3a0 0%,#0093a0 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #00a3a0 0%,#0093a0 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3a0', endColorstr='#0093a0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  color: #ffffff ;
+}
+
+.nav {
+
+  -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+  position: fixed;
+  width: 100%;
+  padding: 5rem 0;
+  z-index: 99;
+}
+
+#header.smaller .nav {
+
+  padding: 2rem 0;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a3a0+0,0093a0+99 */
+background: #00a3a0; /* Old browsers */
+background: -moz-linear-gradient(left,  #00a3a0 0%, #0093a0 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #00a3a0 0%,#0093a0 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #00a3a0 0%,#0093a0 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3a0', endColorstr='#0093a0',GradientType=1 ); /* IE6-9 */
+
+  -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+}
+
+.menu ul {
+  padding-top: 0.6rem;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.menu ul li a {
+  padding: 1rem 2rem;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.menu ul li a.active, .menu ul li a:hover {
+  border-radius: 15rem;
+  padding: 1rem 2rem;
+  color: #00a3a0 ;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(21,96,104,0.5);
+  -o-box-shadow: 0px 5px 5px 0px rgba(21,96,104,0.5);
+  -ms-box-shadow: 0px 5px 5px 0px rgba(21,96,104,0.5);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(21,96,104,0.5);
+  box-shadow: 0px 5px 5px 0px rgba(21,96,104,0.6);
+  -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.menu ul li a.active:hover {
+  color: #00a3a0 ;
+-o-box-shadow: 0px 5px 8px 0px rgba(21,96,104,0.3);
+-moz-box-shadow: 0px 5px 8px 0px rgba(21,96,104,0.3);
+-webkit-box-shadow: 0px 5px 8px 0px rgba(21,96,104,0.3);
+-ms-box-shadow: 0px 5px 8px 0px rgba(21,96,104,0.3);
+  box-shadow: 0px 5px 8px 0px rgba(21,96,104,0.3);
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -moz-transform: translateY(-0.2rem);
+    -o-transform: translateY(-0.2rem);
+    -ms-transform: translateY(-0.2rem);
+    -webkit-transform: translateY(-0.2rem);
+    transform: translateY(-0.2rem);
+}
+
+.logo h1{
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+h1.green {
+  color: #00a3a0 ;
+}
+.green {
+  color: #00a3a0 ;
+}
+
+#cirurgias {
+  background: #f2f2f2;
+  color: #000000;
+}
+
+#cirurgias .shadow {
+  border: 0.5rem solid #ffffff;
+  border-radius: 99rem;
+  width: 12.7rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -3rem;
+  -webkit-box-shadow: 0px 4px 7px 0px rgba(21,96,104,0.2);
+-moz-box-shadow: 0px 4px 7px 0px rgba(21,96,104,0.2);
+box-shadow: 0px 4px 7px 0px rgba(21,96,104,0.2);
+}
+
+#cirurgias img {
+  width: 12.7rem;
+  display: block;
+  margin: 0 auto;
+}
+
+#cirurgias h1 {
+  padding-bottom: 4rem;
+  color: #cccccc;
+}
+
+#cirurgias h2 {
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+#cirurgias .box {
+  padding: 0 4rem 4rem 4rem;
+  margin-bottom: 7rem;
+  background: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+  -moz-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+  box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+}
+
+#cirurgias p {
+  margin: 0;
+  font-size: 1.7rem;
+  line-height: 120%;
+}
+
+#orientacoes, #contato, #footer {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a3a0+0,0093a0+99 */
+background: #00a3a0; /* Old browsers */
+background: -moz-linear-gradient(left,  #00a3a0 0%, #0093a0 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #00a3a0 0%,#0093a0 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #00a3a0 0%,#0093a0 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3a0', endColorstr='#0093a0',GradientType=1 ); /* IE6-9 */
+
+  color: #ffffff ;
+}
+
+#orientacoes h1, #orientacoes p, #contato h1 {
+  color: #ffffff ;
+  margin-bottom: 1rem;
+}
+#orientacoes h2 {
+  font-size: 2.6rem;
+  margin: 0;
+  color: #ffffff ;
+}
+
+#orientacoes .box, .veja .box {
+  margin-bottom: 4rem;
+  padding: 9rem 4rem;
+  background: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+-moz-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+}
+
+#orientacoes .box.left h2, .veja .box.pos {
+  text-align: right;
+}
+
+#orientacoes .box.left, .veja .box.pre {
+  text-align: right;
+  background: url(../images/orientacao-pre-operatorio-dr-fernando-figueiredo-background.jpg) no-repeat center center, #ffffff;
+  background-size: cover;
+}
+
+#orientacoes .box.right h2, .veja .box.pos h2 {
+  text-align: left;
+}
+
+#orientacoes .box.right, .veja .box.pos {
+  text-align: left;
+  background: url(../images/orientacao-pos-operatorio-dr-fernando-figueiredo-background.jpg) no-repeat center center, #ffffff;
+  background-size: cover;
+  margin-bottom: 12rem;
+}
+
+#orientacoes p, #contato p {
+    padding-bottom: 3rem;
+  font-size: 1.7rem;
+  line-height: 120%;
+}
+
+#convenios .container {
+  max-width: 90rem;
+}
+
+#convenios h1 {
+  padding-bottom: 2rem;
+}
+
+#convenios ul {
+  list-style: none;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+  text-align: left;
+  font-size: 1.9rem;
+  margin-bottom: 12rem;
+}
+#convenios ul li:before {
+    margin-right: 0.5rem;
+  font-size: 3rem;
+  color: #5ebcba;
+  content: '›';
+}
+
+#contato {
+  text-align: center;
+}
+
+#contato p {
+  color: #ffffff ;
+  margin-bottom: 4rem;
+}
+
+#contato .address p, #contato .address p a {
+    text-align: left;
+text-decoration: none;
+  color: #0093a0  ;
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+#contato .address p a:hover {
+  text-decoration: underline;
+}
+
+#contato .address p span {
+  font-weight: 200;
+}
+
+#contato .box {
+  margin-bottom: 4rem;
+  padding: 4rem;
+  background: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+  -moz-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+  box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+}
+
+form {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 200;
+}
+
+input[type="submit"] {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+border: solid #b3b3b3 ;
+  border-width: 0 0 0.1rem 0;
+  border-radius: 0;
+  padding-left: 0;
+  margin-bottom: 2rem;
+  color: #666666;
+}
+
+#contato h3 {
+  text-align: left;
+  color: #5ebcba;
+  margin: 0;
+}
+
+.map-container {
+	width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+-moz-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+  margin-bottom: 5rem;
+}
+.map-container iframe{
+	width: 100%;
+	display: block;
+	pointer-events: none;
+	position: relative; /* IE needs a position other than static */
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+-moz-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+}
+.map-container iframe.clicked{
+	pointer-events: auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+-moz-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+}
+
+#footer {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
+#footer p {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  text-align: left;
+}
+
+#footer svg {
+  opacity: 0.4;
+  float: right;
+  width: 4rem;
+  -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+#footer svg:hover {
+  opacity: 1;
+  -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.cirurgias .nav ul li:before {
+  margin: 0;
+  content: none;
+}
+
+.cirurgias-bg .banner .shadow {
+    border: 0.5rem solid #ffffff;
+    border-radius: 99rem;
+    width: 270px;
+    display: block;
+    margin: 0 4rem 0 0;
+    position: absolute;
+    -webkit-box-shadow: 0px 4px 7px 0px rgba(21,96,104,0.2);
+    -moz-box-shadow: 0px 4px 7px 0px rgba(21,96,104,0.2);
+    box-shadow: 0px 4px 7px 0px rgba(21,96,104,0.2);
+}
+
+.cirurgias-bg .banner .title {
+  margin-left: 31rem;
+  padding-bottom: 2rem;
+}
+
+.cirurgias-bg .banner h1 {
+  font-size: 4.5rem;
+  padding-top: 8rem;
+}
+
+.cirurgias-bg .banner {
+  padding-top: 15rem;
+}
+
+.cirurgias-bg .banner img {
+  width: 100%;
+  display: block;
+}
+
+.cirurgias {
+  padding: 12rem 0;
+  text-align: left;
+}
+
+.cirurgias h5 {
+  padding-top: 2.5rem;
+  text-align: left;
+}
+
+.cirurgias .box {
+  padding: 4rem;
+  background: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+  -moz-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+  box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+}
+
+.box h1 {
+  text-align: left;
+  margin-bottom: 0;
+  padding-top: 0;
+  font-size: 2.8rem;
+}
+
+.cirurgias ul {
+  list-style: none;
+  text-align: left;
+  font-size: 1.9rem;
+  margin-bottom: 0;
+}
+
+.cirurgias .box ul li {
+  border-bottom: 0.1rem solid #e6e6e6;
+  padding: 1rem 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  font-size: 1.9rem;
+}
+
+.cirurgias .box ul li a {
+  color: #666666 ;
+  text-decoration: none;
+}
+
+.cirurgias .box ul li a:hover {
+  text-decoration: underline;
+}
+
+.cirurgias .box ul li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cirurgias ul li:before {
+  margin-right: 0.5rem;
+  font-size: 3rem;
+  color: #5ebcba;
+  content: '›';
+}
+
+.veja {
+  padding-top: 6rem;
+  background: #f2f2f2;
+  color: #cccccc;
+}
+
+.veja .box h2 {
+  font-size: 2.6rem;
+  margin: 0;
+  color: #b3b3b3 ;
+}
+  .menu-mob {
+  display: none;
+  }
+
+video {
+    width: 100%;
+    max-width:480px;
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (max-width: 768px) {
+}
+
+/* Larger than desktop */
+@media (max-width: 1024px) {
+
+  #cirurgias .box, #orientacoes .box, #contato .box {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-mob {
+    text-align: right;
+    display: block;
+  }
+
+  .menu-mob svg {
+    padding-top: 0.7rem;
+    width: 3rem;
+  }
+
+  .menu-mob ul {
+    display: none;
+  }
+
+  .menu-mob.open ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    text-align: right;
+  padding: 4rem;
+  background: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+  -moz-box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+  box-shadow: 0px 13px 32px 0px rgba(21,96,104,0.4);
+  border-bottom: 0.1rem solid #e6e6e6;
+  margin: 0;
+  list-style: none;
+  font-size: 1.9rem;
+}
+
+.menu-mob.open ul li a {
+  color: #666666 ;
+  text-decoration: none;
+}
+
+.menu-mob.open ul li a:hover {
+  text-decoration: underline;
+}
+
+.menu-mob.open ul li:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.menu-mob.open ul li:after {
+  margin-left: 0.5rem;
+  margin-top: 5rem;
+  font-size: 3rem;
+  color: #5ebcba;
+  content: '‹';
+}
+
+}
+
+
+
+/* Larger than mobile */
+@media (max-width: 768px) {
+
+  .cirurgias .w-100 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .box.w-100 {
+    margin-top: 5rem;
+  }
+  .nav {
+    padding: 2rem 0;
+  }
+
+  .hyp {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  }
+
+#convenios ul {
+  text-align: center;
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+}
+
+  .logo h1 {
+    font-size: 1.4rem;
+    width: 12rem;
+  }
+
+  .banner p {
+    line-height: 120%;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.7rem;
+}
+
+  section h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner h1 {
+    font-size: 4rem;
+}
+
+  .logo-1, .logo-2 {
+    width: 50%;
+  }
+
+  .banner {
+    padding-top: 11rem;
+  }
+
+  .menu-mob svg {
+    padding-top: 1.3rem;
+}
+
+section#header {
+  text-align: left;
+padding: 0;
+background: no-repeat top right,linear-gradient(to bottom,  #00a3a0 0%,#0093a0 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a3a0+0,0093a0+98 */
+background: no-repeat top right,#00a3a0; /* Old browsers */
+background: no-repeat top right,-moz-linear-gradient(top,  #00a3a0 0%, #0093a0 98%); /* FF3.6-15 */
+background: no-repeat top right,-webkit-linear-gradient(top,  #00a3a0 0%,#0093a0 98%); /* Chrome10-25,Safari5.1-6 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3a0', endColorstr='#0093a0',GradientType=0 ); /* IE6-9 */
+  background-position-x: 100%;
+background-position-y: 0%;
+  background-blend-mode: multiply;
+  color: #ffffff;
+  height: 41rem;
+}
+
+  #contato .address p, #contato .address p a {
+    font-size: 2rem;
+
+}
+
+  #footer p {
+    text-align: center;
+}
+
+  #footer svg {
+    margin: 0 auto;
+    float: none;
+  }
+
+  #orientacoes .box.left h2, #orientacoes .box.right h2, #orientacoes .box.left, #orientacoes .box.right {
+
+    color: #ffffff;
+    text-align: center;
+}
+
+  #orientacoes .box {
+  padding: 8rem 4rem
+  }
+
+  .cirurgias {
+    padding-top: 6rem;
+  }
+
+  .cirurgias-bg .banner .shadow {
+    position: relative;
+    width: 20rem;
+    margin: 0 auto;
+  }
+
+  .cirurgias-bg .banner .title {
+    margin-left: 0;
+  }
+
+  .cirurgias-bg .banner h1 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+
+  .cirurgias-bg .banner {
+    padding-top: 10rem;
+}
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
