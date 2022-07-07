@@ -444,7 +444,7 @@ textarea:focus:-ms-input-placeholder, input:focus:-ms-input-placeholder {
 header {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../images/bg-dr-bruno-canto.jpg);
+  background-image: url(./../images/bg-dr-bruno-canto.jpg);
   background-size: cover;
   display: flex;
   align-items: center;
