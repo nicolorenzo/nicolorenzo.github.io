@@ -127,7 +127,9 @@ nav a,
   font-size: 0.7em;
   margin-right: 2em;
 }
-
+.cargo {
+  margin-right: 0;
+}
 /* Header */
 header,
 nav,
