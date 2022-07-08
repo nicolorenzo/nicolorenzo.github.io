@@ -168,9 +168,15 @@ header img {
 #skills .row .column {
   width: 22%;
 }
+.progress {
+  width: 100%;
+}
+.progress > div {
+  width: 0;
+  transition: width 2s;
+}
 .progress,
 .progress > div {
-  width: 100%;
   height: 1em;
 }
 #skills p {
